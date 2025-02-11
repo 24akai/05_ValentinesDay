@@ -4,7 +4,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    background: #ffc7c7;
+    background: #ffc7c7 url("img/backpink.jpg");
   }
  
 
@@ -55,30 +55,42 @@ body {
   }
   
   .features p {
+    padding-top: 20px;
     display: inline-block;
     vertical-align: top;
     width: 30%;
     margin: 0 5px;
     text-align: center;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center top 10%;
   }
   
   .feature-love {
     padding-top: 60px;
     background-image: url("img/love2.png");
+    /* background:fixed; */
+    background-size:contain;
+    height: 5px;
   }
   
   .feature-gift {
     padding-top: 60px;
     background-image: url("img/love2.png");
+    background-size:contain;
+    height: 5px;
   }
   
   .feature-romance {
     padding-top: 60px;
     background-image: url("img/love2.png");
+    background-size:contain;
+    height: 5px;
   }
-  
+
+  .skills {
+    padding-top: 40px;
+  }
+
   .skills-list {
     padding: 0;
     list-style: none;
