@@ -4,7 +4,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    background: #ffc7c7 url("img/backpink.jpg");
+    background: #ffc7c7 url("../img/backpink.jpg");
   }
 
   h1 {
@@ -68,7 +68,7 @@ body {
   
   .feature-love {
     padding-top: 60px;
-    background-image: url("img/love2.png");
+    background-image: url("../img/love2.png");
     /* background:fixed; */
     background-size:contain;
     height: 5px;
@@ -76,14 +76,14 @@ body {
   
   .feature-gift {
     padding-top: 60px;
-    background-image: url("img/love2.png");
+    background-image: url("../img/love2.png");
     background-size:contain;
     height: 5px;
   }
   
   .feature-romance {
     padding-top: 60px;
-    background-image: url("img/love2.png");
+    background-image: url("../img/love2.png");
     background-size:contain;
     height: 5px;
   }
