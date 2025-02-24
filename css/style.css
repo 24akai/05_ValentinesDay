@@ -134,3 +134,15 @@ body {
     margin-top: 15px;
     font-style: italic;
   }
+
+  .site-footer p {
+    border: 1px solid #ff5a26;
+    padding: 10px 20px;
+    border-radius: 10px 0px;
+    background-color: #ffc5b3;
+    cursor: pointer;
+  }
+
+  .site-footer p:last-child {
+    cursor: auto;
+  }
