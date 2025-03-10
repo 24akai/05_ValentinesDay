@@ -14,8 +14,29 @@ const arrayOfWishes = [
     "Keep shining brightly in everything you do.",
     "Let the day bring you joy and warmth."
 ]
+let countOfHearts = 5; 
 
-document.getElementById('btn_love_wishes').addEventListener('click', function(){
-    let index = Math.floor(Math.random() * arrayOfWishes.length)
-    document.getElementById('love-wishes').innerText = arrayOfWishes[index]
-})
+document.getElementById("count-of-hearts").innerText = "💗".repeat(countOfHearts);
+
+function updatePillDisplay() {
+    document.getElementById("count-of-hearts").innerText = "💗".repeat(countOfHearts) + "🤍".repeat(5 - countOfHearts);
+}
+
+document.getElementById('btn_love_wishes').addEventListener('click', function() {
+    if (countOfHearts > 0) {
+        let index = Math.floor(Math.random() * arrayOfWishes.length);
+        document.getElementById('love-wishes').innerText = arrayOfWishes[index];
+        countOfHearts--;
+        updatePillDisplay();
+    }
+    if (countOfHearts === 0) {
+        document.getElementById("btn_love_wishes").disabled = true;
+        document.getElementById("btn_love_wishes").innerText = "Get more love wishes!";
+    }
+});
+document.getElementById("btn-buy-hearts").addEventListener("click", function() {
+    countOfHearts = 5;
+    updatePillDisplay();
+    document.getElementById("btn_love_wishes").innerText = "Take a love wish";
+    document.getElementById("btn_love_wishes").disabled = false;
+});
